@@ -1,6 +1,8 @@
+import math
 def uslusayi ():
   print ("sonuç:")
   print (sayi1 ** sayi2)
+
 def toplama ():
   print ("sonuç:")
   print (sayi1 + sayi2)
@@ -21,12 +23,17 @@ def cikarma ():
   print (sayi1 - sayi2)
 	#subtraction
 
+def karekok ():
+  print ("sonuç:")
+  print (math.sqrt(sayi1))
+
 print ("işlem seç")
 print ("1= toplama")
 print ("2= çıkarma")
 print ("3= çarpma")
 print ("4= bölme")
-print ("5= üslü sayı **sayı1 taban, sayı2 üs olacaktır**")
+print ("5= üslü sayı ** sayı1 taban, sayı2 üs olacaktır **")
+print ("6= karekök ** sadece sayı1 kullanılacaktır **")
 
 secim = input("işlemini seç: ")
 #asking the user to choose an operation
@@ -45,6 +52,7 @@ elif secim == "4":
   bolme()
 elif secim == "5":
   uslusayi()
-
+elif secim == "6":
+  karekok()
 #the if elif function to execute when the 
 #representing number is chosen
